@@ -1,0 +1,9 @@
+<ul id="menu">
+    @for (num of numeros; track num){
+        <li>
+            <a [routerLink]="['/tabla', num]">
+                Tabla {{num}} | 
+            </a>
+        </li>
+    }
+</ul>

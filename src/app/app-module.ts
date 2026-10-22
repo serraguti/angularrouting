@@ -8,6 +8,8 @@ import { NotFoundComponent } from './components/not-found-component/not-found-co
 import { appRoutingProvider, routing } from './app.routing';
 import { MenuComponent } from './components/menu-component/menu-component';
 import { NumeroDobleComponent } from './components/numero-doble-component/numero-doble-component';
+import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
+import { MenuTablaMultiplicarComponent } from './components/menu-tabla-multiplicar-component/menu-tabla-multiplicar-component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { NumeroDobleComponent } from './components/numero-doble-component/numero
     NotFoundComponent,
     MenuComponent,
     NumeroDobleComponent,
+    TablaMultiplicarComponent,
+    MenuTablaMultiplicarComponent,
   ],
   imports: [BrowserModule, routing],
   providers: [provideBrowserGlobalErrorListeners(), appRoutingProvider],
