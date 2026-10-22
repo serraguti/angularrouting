@@ -1,0 +1,22 @@
+<ul id="menu">
+    <li> 
+        <a [routerLink]="['/']">Home | </a>
+    </li>
+    <li>
+        <a [routerLink]="['/cine']">Cine | </a>
+    </li>
+    <li>
+        <a [routerLink]="['/musica']">Musica | </a>
+    </li>
+    <li>
+        <a [routerLink]="['/doble']">Doble nada | </a>
+    </li>
+    <li>
+        <a [routerLink]="['/doble/7']">Doble 7 | </a>
+    </li>
+@for (item of [].constructor(3); track $index){
+    <a [routerLink]="['/doble', $index + 5]">
+        Doble {{$index + 5}}
+    </a>
+}    
+</ul>
